@@ -250,6 +250,21 @@ html {
   font-size: 125%;
 }
 
+.wrapper {
+  max-width: 1200px;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.top-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .top-logo {
   color: #50E3C2;
   font-size: 1.73rem;
@@ -263,9 +278,25 @@ nav {
   font-weight: bold;
   line-height: 1.45rem;
   letter-spacing: 0.05rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-nav:hover {
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  margin-left: 1.25rem;
+}
+
+a:hover {
   color: #50E3C2;
 }
 
@@ -276,6 +307,16 @@ h1 {
   font-weight: bold;
   letter-spacing: 0.335rem;
   line-height: 2.9rem;
+  position: absolute;
+  left: 500px;
+  bottom: 450px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 span {
@@ -285,16 +326,56 @@ span {
 }
 
 header {
-  background-image: url(../project-1-beach-stay/beach-final-images/home-image-1.jpg);
+  background-image: url(./project-1-beach-stay/beach-final-images/home-image-1.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 80vh;
+}
+
+.header-image {
+  height: 60%;
+  width: 60%;
+  position: absolute;
+  left: 0px;
+  top: 300px;
+}
+
+.visit-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10rem;
+}
+
+.visit-left {
+  margin-top: 15rem;
+  width: 75%;
+}
+
+.visit-right {
+  width: 25%;
+  margin-left: 5rem;
+}
+
+.visit-image {
+  position: relative;
+  top: 280px;
+  right: -20px;
 }
 
 .visit-box {
   background-color: #50E3C2;
-  width: 50px;
-  height: 50px;
+  width: 300px;
+  height: 300px;
+}
+
+h2 {
+  margin-bottom: 1rem;
+}
+
+.visit-left p {
+  margin-bottom: 1rem;
 }
 
 p {
@@ -317,40 +398,113 @@ h2, h3, h5 {
 button {
   color: white;
   background-color: #063974;
+  text-transform: capitalize;
+  font-family: "Playfair Display SC", serif;
+  line-height: 1.6rem;
+  letter-spacing: 0.05rem;
+  padding: 0.5rem;
 }
 
-.gallery {
+.gallery, .locations-plan {
   background-color: #D2F9F1;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.beach-title::before {
-  content: url(../project-1-beach-stay/home-outline.svg);
+.gallery-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.community-title::before {
-  content: url(../project-1-beach-stay/people-outline.svg);
+.gallery-1, .gallery-2 {
+  margin-right: 1rem;
 }
 
-.blog-title::before {
-  content: url(../project-1-beach-stay/document-outline.svg);
+.company-highlights {
+  padding: 5rem 0;
 }
 
-.touch-title::before {
-  content: url(../project-1-beach-stay/call-outline.svg);
+i {
+  font-family: FontAwesome;
+  text-transform: none;
+  font-size: 1rem;
+  background-color: #50E3C2;
+  border-radius: 50%;
+  color: white;
+  padding: 0.5rem;
+}
+
+.top-icons, .bottom-icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+h3 {
+  display: inline;
+  margin-left: 1rem;
+}
+
+.icon-1 p, .icon-2 p, .icon-3 p, .icon-4 p {
+  padding-left: 3rem;
+}
+
+.top-icons {
+  margin-bottom: 2rem;
 }
 
 h4 {
   color: #063974;
 }
 
+.locations-plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.new-locations-left {
+  margin-right: 10rem;
+}
+
+.locations-plan {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.new-locations-box {
+  height: 312px;
+  background-color: #50E3C2;
+}
+
+.new-locations-image {
+  position: absolute;
+  top: 2700px;
+  left: 0px;
+  width: 500px;
+}
+
 aside {
-  background-image: url(../project-1-beach-stay/beach-final-images/banner-image.jpg);
+  background-image: url(./project-1-beach-stay/beach-final-images/banner-image.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 400px;
+}
+
+.free-trip {
+  text-align: center;
+  padding-top: 5rem;
+  padding-bottom: 7rem;
+}
+
+.free-trip p {
+  margin-bottom: 1rem;
 }
 
 footer {
   color: white;
   background-color: black;
+  text-align: center;
 }

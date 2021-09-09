@@ -1,0 +1,56 @@
+header {
+    background-image: url(./project-1-beach-stay/beach-final-images/blog-image-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+
+h1 {
+    color: white;
+}
+
+fieldset {
+    background-color: white;
+    width: 400px;
+    padding: 2rem;
+    border-style: none;
+}
+
+.name-email {
+    display: flex;
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.name-input {
+    margin-right: 1.5rem;
+    width: 50%;
+    border-bottom: 2px solid #50E3C2;
+}
+
+.email-input {
+    width: 50%;
+    border-bottom: 2px solid #50E3C2;
+}
+
+input{
+    border: 0px;
+    width: 100%;
+}
+
+textarea {
+    border: 2px solid #50E3C2;
+    padding-top: 1.5rem;
+    margin-bottom: 1rem;
+    resize: none;
+}
+
+input, textarea {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+}
+
+button {
+    width: 100%;
+}
