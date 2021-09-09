@@ -1,0 +1,115 @@
+@import '_setup';
+
+$primaryColor: #663335;
+$secondaryColor: #112664;
+$fontLato: 'Lato', sans-serif;
+$fontPlay: 'Playfair Display SC', serif;
+$cyanColor: #50E3C2;
+$greenColor: #0C5F4C;
+$blueColor: #063974;
+$lightBlue: #D2F9F1;
+
+.top-logo {
+    color: #50E3C2;
+    font-size: 1.73rem;
+    font-family: $fontPlay;
+}
+
+nav {
+    color: white;
+    font-size: 1rem;
+    font-family: $fontLato;
+    font-weight: bold;
+    line-height: 1.45rem;
+    letter-spacing: 0.05rem;
+}
+
+nav:hover {
+    color: $cyanColor;
+}
+
+h1 {
+    color: $greenColor;
+    font-size: 3.1rem;
+    font-family: $fontLato;
+    font-weight: bold;
+    letter-spacing: 0.335rem;
+    line-height: 2.9rem;
+}
+
+span {
+    color: $blueColor;
+    font-size: 5.56rem;
+    font-family: $fontPlay;
+}
+
+header {
+    background-image: url(../project-1-beach-stay/beach-final-images/home-image-1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.visit-box {
+    background-color: $cyanColor;
+    width: 50px;
+    height: 50px;
+}
+
+p {
+    font-family: $fontLato;
+    font-size: 1rem;
+    line-height: 1.6rem;
+    letter-spacing: 0.1rem;
+}
+
+h2,h4,h5 {
+    font-family: $fontLato;
+    font-size: 1.75rem;
+    font-weight: bold;
+}
+
+h2, h3, h5 {
+    color: $greenColor;
+}
+
+button {
+    color: white;
+    background-color: $blueColor;
+}
+
+.gallery {
+    background-color: $lightBlue;
+}
+
+.beach-title::before {
+    content: url(../project-1-beach-stay/home-outline.svg)
+}
+
+.community-title::before {
+    content: url(../project-1-beach-stay/people-outline.svg)
+}
+
+.blog-title::before {
+    content: url(../project-1-beach-stay/document-outline.svg);
+}
+
+.touch-title::before {
+    content: url(../project-1-beach-stay/call-outline.svg);
+}
+
+h4 {
+    color: $blueColor;
+}
+
+aside {
+    background-image: url(../project-1-beach-stay/beach-final-images/banner-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    color: white;
+    background-color: black;
+}
