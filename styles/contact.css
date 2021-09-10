@@ -3,11 +3,14 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 50vh;
 }
 
 h1 {
     color: white;
+    left: 220px;
+    top: 150px;
+    position: absolute;
 }
 
 fieldset {
@@ -15,6 +18,11 @@ fieldset {
     width: 400px;
     padding: 2rem;
     border-style: none;
+    position: relative;
+    top: -140px;
+    left: -40px;
+    -webkit-box-shadow: 19px 20px 0px -6px #50E3C2; 
+    box-shadow: 19px 20px 0px -6px #50E3C2;
 }
 
 .name-email {
@@ -55,12 +63,6 @@ button {
     width: 100%;
 }
 
-.contact-box {
-    width: 643px;
-    height: 498px;
-    background-color: #50E3C2;
-}
-
 i {
     background-color: white;
     color: black;
@@ -70,6 +72,7 @@ i {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    height: 0px;
 }
 
 .social-icons {
@@ -86,4 +89,10 @@ i {
 
 .fa-facebook-f {
     padding-left: 0;
+}
+
+.social-address {
+    position: relative;
+    top: -400px;
+    right: 150px;
 }

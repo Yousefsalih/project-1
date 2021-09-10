@@ -308,8 +308,8 @@ h1 {
   letter-spacing: 0.335rem;
   line-height: 2.9rem;
   position: absolute;
-  left: 500px;
-  bottom: 450px;
+  left: 370px;
+  bottom: 270px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -317,6 +317,7 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  z-index: 20;
 }
 
 span {
@@ -362,12 +363,8 @@ header {
   position: relative;
   top: 280px;
   right: -20px;
-}
-
-.visit-box {
-  background-color: #50E3C2;
-  width: 300px;
-  height: 300px;
+  -webkit-box-shadow: -12px 13px 0px 0px #50E3C2;
+  box-shadow: -12px 13px 0px 0px #50E3C2;
 }
 
 h2 {
@@ -443,7 +440,7 @@ i {
 
 h3 {
   display: inline;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
 }
 
 .icon-1 p, .icon-2 p, .icon-3 p, .icon-4 p {
@@ -456,36 +453,47 @@ h3 {
 
 h4 {
   color: #063974;
+  margin-top: initial;
 }
 
 .locations-plan {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-.new-locations-left {
-  margin-right: 10rem;
-}
-
-.locations-plan {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
 
-.new-locations-box {
-  height: 312px;
-  background-color: #50E3C2;
+.new-locations-left {
+  margin-right: 20rem;
+  text-align: right;
+  margin-top: 10rem;
+  width: 50%;
+}
+
+.new-locations-right {
+  width: 50%;
 }
 
 .new-locations-image {
   position: absolute;
-  top: 2700px;
+  top: 2520px;
   left: 0px;
-  width: 500px;
+  -webkit-box-shadow: 10px 10px 0px 0px #50E3C2;
+  box-shadow: 10px 10px 0px 0px #50E3C2;
+  width: 35%;
 }
 
-aside {
+.plan-ahead-image {
+  -webkit-box-shadow: -12px 13px 0px 0px #50E3C2;
+  box-shadow: -12px 13px 0px 0px #50E3C2;
+  position: absolute;
+  right: 0px;
+  top: 3080px;
+  width: 35%;
+}
+
+.background-image {
   background-image: url(./project-1-beach-stay/beach-final-images/banner-image.jpg);
   background-position: center;
   background-repeat: no-repeat;

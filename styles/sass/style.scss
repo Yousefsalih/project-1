@@ -1,7 +1,5 @@
 @import '_setup';
 
-$primaryColor: #663335;
-$secondaryColor: #112664;
 $fontLato: 'Lato', sans-serif;
 $fontPlay: 'Playfair Display SC', serif;
 $cyanColor: #50E3C2;
@@ -61,11 +59,11 @@ h1 {
     letter-spacing: 0.335rem;
     line-height: 2.9rem;
     position: absolute;
-    left: 500px;
-    bottom: 450px;
+    left: 370px;
+    bottom: 270px;
     display: flex;
     flex-direction: column;
-
+    z-index: 20;
 }
 
 span {
@@ -109,12 +107,8 @@ header {
     position: relative;
     top: 280px;
     right: -20px;
-}
-
-.visit-box {
-    background-color: $cyanColor;
-    width: 300px;
-    height: 300px;
+    -webkit-box-shadow: -12px 13px 0px 0px #50E3C2; 
+    box-shadow: -12px 13px 0px 0px #50E3C2;
 }
 
 h2 {
@@ -170,12 +164,6 @@ button {
     padding: 5rem 0;
 }
 
-// .beach-title::before, .community-title::before, .blog-title::before, .touch-title::before {
-//     content: "\f0c0";
-//     width: 50px;
-//     height: 50px;
-// }
-
 i {
     font-family: FontAwesome;
     text-transform: none;
@@ -192,7 +180,7 @@ i {
 
 h3{
     display: inline;
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 
 .icon-1 p, .icon-2 p, .icon-3 p, .icon-4 p  {
@@ -205,34 +193,45 @@ h3{
 
 h4 {
     color: $blueColor;
+    margin-top: initial;
 }
 
 .locations-plan {
     display: flex;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .new-locations-left {
-    margin-right: 10rem;
+    margin-right: 20rem;
+    text-align: right;
+    margin-top: 10rem;
+    width: 50%;
 }
 
-.locations-plan {
-    padding-top: 2rem;
-    padding-bottom: 2rem
-}
-
-.new-locations-box {
-    height: 312px;
-    background-color: $cyanColor;
+.new-locations-right {
+    width: 50%;
 }
 
 .new-locations-image {
     position: absolute;
-    top: 2700px;
+    top: 2520px;
     left: 0px;
-    width: 500px;
+    -webkit-box-shadow: 10px 10px 0px 0px #50E3C2; 
+    box-shadow: 10px 10px 0px 0px #50E3C2;
+    width: 35%;
 }
 
-aside {
+.plan-ahead-image {
+    -webkit-box-shadow: -12px 13px 0px 0px #50E3C2; 
+    box-shadow: -12px 13px 0px 0px #50E3C2;
+    position: absolute;
+    right: 0px;
+    top: 3080px;
+    width: 35%;
+}
+
+.background-image {
     background-image: url(./project-1-beach-stay/beach-final-images/banner-image.jpg);
     background-position: center;
     background-repeat: no-repeat;

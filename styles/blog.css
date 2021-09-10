@@ -3,11 +3,23 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 80vh;
+    height: 40vh;
+    margin-bottom: 500px;
 }
 
 h1 {
+    display: inline;
     color: white;
+    z-index: 0;
+    position: absolute;
+    left: 260px;
+    top: 164px;
+}
+
+h2{
+    text-transform: capitalize;
+    padding-top: 2rem;
+    margin-bottom: 0.5rem;
 }
 
 fieldset {
@@ -53,4 +65,76 @@ input, textarea {
 
 button {
     width: 100%;
+}
+
+.five-days-image {
+    width: 60%;
+    position: absolute;
+    left: 0;
+    top: 250px;
+    -webkit-box-shadow: 19px 20px 0px -6px #50E3C2; 
+    box-shadow: 19px 20px 0px -6px #50E3C2;
+}
+
+span {
+    color: #063974;
+    font-weight: bolder;
+    font-size: 1rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.wrapper-2 {
+    width: 65%;
+    border-right: 1px solid #50E3C2;
+    border-bottom: 1px solid #50E3C2;;
+}
+
+.wrapper-3 {
+    width: 65%;
+}
+
+.date-bora {
+    color: #063974;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.paragraph {
+    margin-bottom: 1rem;
+    padding-right: 1rem;
+}
+
+aside {
+    position: absolute;
+    right: -600px;
+    top: 400px;
+}
+
+.mission-p {
+    width: 40%;
+    margin-bottom: 1rem;
+}
+
+h3 {
+    color: #063974;
+}
+
+.green-date {
+    color: #063974;
+    font-weight: bolder;
+}
+
+h4 {
+    margin-bottom: 1rem;
+}
+
+.comments-top {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    color: white;
+    background-color: black;
+    text-align: center;
 }
