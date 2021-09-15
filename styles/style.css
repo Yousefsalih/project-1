@@ -300,6 +300,52 @@ a:hover {
   color: #50E3C2;
 }
 
+nav .open-menu, .close-menu {
+  font-size: 1.5rem;
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 700px) {
+  nav .main-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 50;
+    height: 100vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: #063974;
+    color: #50E3C2;
+    display: none;
+  }
+
+  nav .main-menu li a:hover {
+    background: none;
+    color: white;
+    font-size: 2.25rem;
+  }
+
+  nav .main-menu .close-menu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  nav .open-menu {
+    display: block;
+  }
+}
 h1 {
   color: #0C5F4C;
   font-size: 3.1rem;
